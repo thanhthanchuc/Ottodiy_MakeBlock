@@ -49,6 +49,18 @@
                 "work": "Ottobot.playGesture({0});\n",
                 "loop": ""
             }
+        ],
+        [
+            "w",
+            "Lấy khoảng cách và in ra serial port",
+            "distance",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.getDistance();\n Serial.println(distance);\n",
+                "loop": ""
+            }
         ]
     ],
     "menus": {

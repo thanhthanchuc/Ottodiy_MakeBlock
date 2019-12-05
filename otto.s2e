@@ -39,6 +39,74 @@
         ],
         [
             "w",
+            "Tiến lên phía trước %d bước trong thời gian %d",
+            "4",
+            "1000",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.walk({0},{1},1);\n",
+                "loop": ""
+            }
+        ],
+        [
+            "w",
+            "Lùi về phía sau %d bước trong thời gian %d",
+            "4",
+            "1000",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.walk({0},{1},-1);\n",
+                "loop": ""
+            }
+        ],
+        [
+            "w",
+            "Sang bên %d.directions %d bước trong thời gian %d",
+            "phải",
+            "4",
+            "1000",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.turn({1},{2},{0});\n",
+                "loop": ""
+            }
+        ],
+        [
+            "w",
+            "Uốn chân %d.directions %d lần trong thời  gian %d",
+            "phải",
+            "1",
+            "1400",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.bend({1},{2},{0});\n",
+                "loop": ""
+            }
+        ],
+        [
+            "w",
+            "Lắc chân %d.directions %d lần trong thời  gian %d",
+            "phải",
+            "1",
+            "2000",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.shakeLeg({1},{2},{0});\n",
+                "loop": ""
+            }
+        ],
+        [
+            "w",
             "Cử chỉ  %d.gestures",
             "gesture",
             "vui vẻ",
@@ -108,6 +176,10 @@
             "lúc lắc",
             "chiến thắng",
             "thất bại"
+        ],
+        "directions": [
+            "trái",
+            "phải"
         ]
     },
     "values": {
@@ -150,5 +222,7 @@
         "lúc lắc": 10,
         "chiến thắng": 11,
         "thất bại": 12,
+        "phải": 1,
+        "trái": -1
     }
 }

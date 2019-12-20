@@ -24,6 +24,19 @@
         ],
         [
             "w",
+            "Otto nhẩy %d bước",
+            "jump",
+            "1",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.jump({0}, 2000);\n",
+                "loop": ""
+            }
+        ],
+        [
+            "w",
             "Chuyển động %d.actions tốc độ %d.speeds biên độ %d",
             "move",
             "tiến",
@@ -107,6 +120,36 @@
                 "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
                 "def": "Otto Ottobot;\n",
                 "work": "Ottobot.shakeLeg({1},{2},{0});\n",
+                "loop": ""
+            }
+        ],
+        [
+            "w",
+            "Chuyển động lên xuống %d lần trong thời gian %d",
+            "updown",
+            "1",
+            "1000",
+            "vui vẻ",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.updown({0}, {1}, 20);\n",
+                "loop": ""
+            }
+        ],
+        [
+            "w",
+            "Chuyển động đung đưa %d lần trong thời gian %d",
+            "swing",
+            "1",
+            "1000",
+            "vui vẻ",
+            {
+                "setup": "Ottobot.defaultInit();\n",
+                "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+                "def": "Otto Ottobot;\n",
+                "work": "Ottobot.swing({0}, {1}, 20);\n",
                 "loop": ""
             }
         ],

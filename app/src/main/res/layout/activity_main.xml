@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/design_default_color_primary"
+    tools:context=".MainActivity">
+          <TextView
+              android:gravity="center"
+              android:textSize="35dp"
+              android:textStyle="italic"
+              android:textColor="#33FF33"
+              android:text="Otto + BlueTooth"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              ></TextView>
+
+    <Button
+        android:textColor="@color/cardview_light_background"
+        android:background="@color/colorPrimary"
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect" />
+     <LinearLayout
+
+         android:orientation="vertical"
+         android:layout_marginTop="30dp"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         >
+         <LinearLayout
+             android:gravity="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <ImageButton
+                 android:scaleType="centerCrop"
+                 android:id="@+id/on"
+                 android:layout_width="120dp"
+                 android:layout_height="120dp"
+                 android:src="@drawable/lui">
+             </ImageButton>
+             <ImageButton
+                 android:scaleType="centerCrop"
+
+                 android:layout_marginLeft="20dp"
+                 android:id="@+id/off"
+                 android:layout_width="120dp"
+                 android:layout_height="120dp"
+                 android:src="@drawable/walk"
+                 >
+
+             </ImageButton>
+         </LinearLayout>
+         <LinearLayout
+
+             android:layout_marginTop="20dp"
+                android:gravity="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <ImageButton
+                 android:id="@+id/ba"
+                 android:scaleType="centerCrop"
+
+                 android:layout_width="120dp"
+                 android:layout_height="120dp"
+                 android:src="@drawable/nhac2chan">
+             </ImageButton>
+
+             <ImageButton
+                 android:id="@+id/bon"
+                 android:layout_marginLeft="20dp"
+                 android:scaleType="centerCrop"
+
+                 android:layout_width="120dp"
+                 android:layout_height="120dp"
+                 android:src="@drawable/nhun2chan">
+
+             </ImageButton>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginTop="20dp"
+             android:gravity="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <ImageButton
+                 android:id="@+id/nam"
+                 android:scaleType="centerCrop"
+
+                 android:layout_width="120dp"
+                 android:layout_height="120dp"
+                 android:src="@drawable/co2chan">
+             </ImageButton>
+             <ImageButton
+                 android:id="@+id/sau"
+                 android:layout_marginLeft="20dp"
+                 android:scaleType="centerCrop"
+
+                 android:layout_width="120dp"
+                 android:layout_height="120dp"
+                 android:src="@drawable/co1chan"
+                 >
+
+             </ImageButton>
+         </LinearLayout>
+
+     </LinearLayout>
+
+</LinearLayout>

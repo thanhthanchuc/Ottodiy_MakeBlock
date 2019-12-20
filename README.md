@@ -16,6 +16,7 @@
     - Clone this project
     - "Zip" the file.
     - Change mBlock to arduino mode, connect your otto diy.
+    - Change Boards to "Arduino Nano (mega 328)
     - Choice Extensions tab => Manage Extensions => Click Add Extension button => Choice Zip file and import your Zip extension file.
     - Drag and Run. Your otto will dance. Happy!
     ```
